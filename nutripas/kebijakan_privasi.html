@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kebijakan Privasi Nutripas: Kalkulator Nutrisi, KMS, artikel, dan konsultasi.">
+<title>Kebijakan Privasi Nutripas</title>
+<style>
+:root { color-scheme: light dark; }
+body { margin: 0; background: #fafafa; color: #202124; font: 1rem/1.7 system-ui, sans-serif; }
+main { max-width: 48rem; margin: auto; padding: 1.5rem; overflow-wrap: anywhere; }
+h1, h2 { line-height: 1.3; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.35rem; margin-top: 2rem; }
+a { color: #174ea6; text-underline-offset: .2em; }
+a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+li { margin-block: .5rem; }
+@media (prefers-color-scheme: dark) {
+body { background: #181818; color: #f2f1ec; }
+a { color: #a8c7fa; }
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Kebijakan Privasi Nutripas</h1>
+<p>Terakhir diperbarui: 3 Oktober 2026.</p>
+<p>Kebijakan ini menjelaskan pengelolaan data dalam aplikasi Nutripas: Kalkulator Nutrisi, termasuk kalkulator gizi, pemantauan pertumbuhan anak (KMS), artikel, dan konsultasi melalui chat. Untuk pertanyaan atau permintaan terkait data pribadi, hubungi pengelola Nutripas melalui <a href="https://wa.me/6285819935078">WhatsApp +62 858-1993-5078</a>.</p>
+<h2>Data akun dan notifikasi</h2>
+<p>Saat Anda masuk menggunakan Google, aplikasi menggunakan identitas akun Google melalui Firebase Authentication, termasuk ID pengguna, alamat email, nama, dan foto profil yang tersedia. Nutripas tidak meminta atau menyimpan kata sandi akun Google Anda.</p>
+<p>Saat melengkapi registrasi, Anda memberikan nama, tanggal lahir, jenis kelamin, dan nomor telepon opsional. Profil tersebut disimpan di Cloud Firestore untuk identifikasi pengguna dan layanan konsultasi. Tanggal lahir dan jenis kelamin mendukung informasi usia dan kebutuhan gizi. Aplikasi juga menyimpan token Firebase Cloud Messaging pada profil untuk mengirim notifikasi. Izin notifikasi dapat ditolak atau diubah melalui pengaturan Android.</p>
+<h2>Konsultasi dan artikel</h2>
+<p>Pesan yang Anda kirim melalui chat, identitas pengirim, waktu pesan, dan informasi percakapan disimpan di Firebase Realtime Database untuk menyediakan riwayat dan konsultasi. Admin layanan dapat mengakses percakapan untuk memberikan tanggapan. Pesan dapat memuat informasi kesehatan yang Anda pilih untuk bagikan; hindari mengirim data yang tidak diperlukan untuk konsultasi.</p>
+<p>Artikel yang dipublikasikan melalui aplikasi, termasuk judul dan isinya, disimpan melalui Firebase dan dapat dibaca pengguna aplikasi. Jangan memasukkan informasi pribadi yang tidak dimaksudkan untuk dipublikasikan ke dalam artikel.</p>
+<h2>Kalkulator dan data KMS</h2>
+<p>Input kalkulator gizi diproses di perangkat untuk menghasilkan perhitungan. Nama anak, tanggal lahir, jenis kelamin, serta catatan berat dan panjang atau tinggi badan KMS disimpan dalam database Room di perangkat. Alur KMS saat ini tidak mengunggah catatan tersebut ke database Firebase.</p>
+<p>Android dapat mencadangkan atau memindahkan data aplikasi, termasuk database lokal, sesuai pengaturan perangkat dan layanan pencadangan Anda. Menghapus data aplikasi atau menghapus instalasi dapat menghapus salinan lokal; salinan cadangan dan pemulihan mengikuti pengaturan layanan pencadangan. Logout tidak menghapus akun, percakapan di server, atau seluruh data KMS lokal.</p>
+<h2>Layanan Google dan data teknis</h2>
+<p>Nutripas menggunakan layanan pihak ketiga berikut:</p>
+<ul><li>Firebase Authentication, Cloud Firestore, Realtime Database, dan Storage untuk autentikasi, profil, percakapan, konten, dan pemuatan gambar.</li><li>Firebase Cloud Messaging untuk pengiriman notifikasi.</li><li>Google Analytics for Firebase untuk statistik penggunaan dan interaksi aplikasi.</li><li>Firebase Crashlytics untuk laporan crash dan diagnosis gangguan. ID pengguna dapat dikaitkan dengan laporan agar gangguan pada sesi pengguna dapat ditelusuri.</li><li>Google AdMob untuk menampilkan banner dan iklan berhadiah yang digunakan dalam akses konsultasi.</li></ul>
+<p>SDK tersebut dapat memproses data teknis seperti alamat IP, pengenal perangkat atau instalasi, ID iklan jika tersedia, informasi perangkat dan sistem operasi, interaksi aplikasi atau iklan, serta laporan gangguan sesuai layanan dan konfigurasinya. Data digunakan untuk menyediakan layanan, statistik, diagnosis, penayangan dan pengukuran iklan, serta pencegahan penyalahgunaan. Penanganan oleh penyedia layanan dijelaskan dalam <a href="https://policies.google.com/privacy">Kebijakan Privasi Google</a> dan <a href="https://firebase.google.com/support/privacy">Privasi dan Keamanan Firebase</a>.</p>
+<h2>Penyimpanan dan keamanan</h2>
+<p>Data akun dan percakapan disimpan pada layanan Firebase untuk menyediakan fungsi aplikasi; data KMS disimpan secara lokal seperti dijelaskan di atas. Lama penyimpanan dapat berbeda menurut jenis data, kebutuhan layanan, serta ketentuan penyedia layanan. Hubungi pengelola untuk informasi atau permintaan terkait penyimpanan dan penghapusan data Anda.</p>
+<p>Komunikasi aplikasi dengan endpoint Firebase menggunakan koneksi HTTPS. Kebijakan ini tidak menjanjikan bahwa seluruh pesan terenkripsi ujung ke ujung atau bahwa setiap sistem kebal terhadap gangguan dan akses tidak sah. Jangan membagikan kata sandi, kode masuk, atau data sensitif yang tidak diperlukan melalui chat.</p>
+<h2>Pilihan dan permintaan terkait data</h2>
+<p>Anda dapat menggunakan fitur yang tidak memerlukan login tanpa membuat akun konsultasi, memilih untuk tidak mengisi nomor telepon opsional, mengatur izin notifikasi, serta mengatur privasi iklan dan pencadangan melalui pengaturan perangkat yang tersedia. Pembatasan izin atau layanan dapat memengaruhi fitur terkait.</p>
+<p>Untuk pertanyaan, koreksi, atau permintaan penghapusan data, hubungi <a href="https://wa.me/6285819935078">WhatsApp pengelola Nutripas</a>. Pengelola dapat meminta informasi yang diperlukan untuk memverifikasi kepemilikan akun. Jangan mengirim kata sandi atau kode verifikasi. Permintaan melalui kontak ini tidak berarti penghapusan otomatis, dan logout bukan penghapusan akun.</p>
+<h2>Perubahan kebijakan</h2>
+<p>Kebijakan dapat diperbarui ketika fitur atau pengelolaan data berubah. Versi yang diperbarui akan mencantumkan tanggal pembaruan dan tersedia melalui halaman Kebijakan Privasi Nutripas. Tinjau kembali halaman ini untuk mengetahui informasi terbaru.</p>
+</main>
+</body>
+</html>
